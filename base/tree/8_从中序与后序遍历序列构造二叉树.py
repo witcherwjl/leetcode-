@@ -34,11 +34,12 @@ class Solution:
         
         # 创建新节点
         now = TreeNode()
+        # 提出后序根节点
         now.val = postorder[-1]
 
         root_in = -1
         for i in range(len(inorder)):
-            # 寻找根节点
+            # 寻找中序根节点
             if inorder[i] == now.val:
                 root_in = i
                 break
