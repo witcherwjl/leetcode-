@@ -8,6 +8,7 @@ class Solution:
     #max_n -2, 0, 2,  6, -2,   4,   48
     #min_n -2, 0, 2,  3, -12, -48,  -1
     # res = 48
+    
         max_n, min_n, res = nums[0], nums[0], nums[0]
         for i in range(1, len(nums)):
             mx, mi = max_n, min_n
